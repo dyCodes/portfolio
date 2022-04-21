@@ -1,0 +1,50 @@
+// Variables
+$primaryColor: #eec830;
+$mainColor: #295dfb;
+$black: #111;
+
+// MIXINS
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex_sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+// MEDIA QUERIES
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin pc {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+// RESPONSIVE CLASS
+@mixin large_screen {
+  @media (max-width: 991px) {
+    display: none !important;
+  }
+}
+@mixin small_screen {
+  @media (min-width: 992px) {
+    display: none !important;
+  }
+}
