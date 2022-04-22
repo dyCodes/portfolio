@@ -3,12 +3,17 @@
 @import "./layout";
 
 .hero {
-  color: #fff;
-  padding: 60px 0 30px;
+  padding: 50px 5px;
   min-height: 58vh;
   background: rgb(14, 16, 20);
+  overflow: hidden;
+  @include flex_center;
 
+  .container {
+    margin-top: 80px;
+  }
   ._heading {
+    color: #fff;
     font-size: calc(1.42rem + 2.1vw);
     font-weight: 600;
     line-height: 1.2;
@@ -27,6 +32,16 @@
     border-radius: 0px;
     text-transform: capitalize;
     letter-spacing: 1px;
+  }
+
+  .hero_image {
+    padding: 0 1rem;
+
+    img {
+      display: block;
+      margin: auto;
+      // max-width: 480px;
+    }
   }
 }
 
