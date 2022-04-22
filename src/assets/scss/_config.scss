@@ -4,7 +4,7 @@ $mainColor: #295dfb;
 $black: #111;
 
 // MIXINS
-@mixin flex {
+@mixin flex_center {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +37,7 @@ $black: #111;
   }
 }
 
-// RESPONSIVE CLASS
+// RESPONSIVE DISPLAY
 @mixin large_screen {
   @media (max-width: 991px) {
     display: none !important;

@@ -4,37 +4,36 @@
 header {
   width: 100%;
   position: absolute;
-  padding: 6px;
+  padding: 12px 6px;
 
   .navbar {
     transition: 0.2s;
-  }
-  .navbar .logo {
-    width: 64px;
-  }
-  .navbar .navbar-toggler {
-    border: none !important;
-    box-shadow: none !important;
-    font-size: 35px;
-    color: #fff;
-    padding-right: 0;
-  }
-  .navbar .navbar-collapse {
-    a.nav_link {
-      color: #eee;
-      font-weight: 400;
+
+    .navbar-brand img {
+      width: 58px;
+    }
+    .navbar-toggler {
+      border: none !important;
+      box-shadow: none !important;
+      font-size: 35px;
+      color: #fff;
+      padding-right: 0;
+    }
+    .navbar-collapse .nav-link {
+      color: rgba(255, 255, 255, 0.9);
       padding: 6px;
-      margin-left: 18px;
+      margin-left: 14px;
       font-size: 17px;
+      font-weight: 400;
       letter-spacing: 0.2px;
-      text-decoration: none;
-    }
-    a.nav_link:hover {
-      color: $mainColor;
-    }
-    a.nav_link.active {
-      color: $mainColor;
-      // font-weight: bold;
+
+      &:hover {
+        color: $mainColor;
+        text-decoration: none;
+      }
+      &.active {
+        color: $mainColor;
+      }
     }
   }
 }
@@ -49,33 +48,39 @@ footer {
     display: inline-block;
     color: #fff;
     font-size: 38px;
-    cursor: pointer;
     padding: 12px;
     position: relative;
-    top: -28px;
+    top: -24px;
+    cursor: pointer;
   }
-  .contact_info p {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  .contact_info a {
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: underline;
+  .contact_info {
+    p,
+    a {
+      color: rgba(255, 255, 255, 0.75);
+    }
+    a {
+      text-decoration: underline;
+    }
   }
 }
 
 /* Responsize CSS */
 @media (max-width: 767px) {
-  header .navbar .navbar-collapse ul {
-    background: #fff;
-  }
-  header .navbar .navbar-collapse ul a.nav_link {
-    color: #222;
-    display: block;
-    padding: 14px;
-    margin: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  header .navbar .navbar-collapse ul li:last-of-type a {
-    border: none;
+  #header .navbar-collapse .navbar-nav {
+    // background: #fff;
+    background: #1d1f23;
+    margin-top: 16px;
+
+    .nav-link {
+      // color: #222;
+      display: block;
+      padding: 14px;
+      margin: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+      &:last-of-type {
+        border: none;
+      }
+    }
   }
 }
