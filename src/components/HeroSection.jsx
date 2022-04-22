@@ -11,10 +11,12 @@ const HeroSection = () => {
                     </div>
 
                     <div className="col-lg-6 mb-5 mb-lg-0 pt-lg-3">
-                        <h1 className="_heading mb-2">
-                            Hi, I'm Yusuf Daudu
+                        <div className="_header">
+                            <h1 className="_heading mb-2">
+                                Hi, I'm Yusuf Daudu
+                            </h1>
                             <h3 className="_sub_heading fw-normal">Frontend + PHP Developer</h3>
-                        </h1>
+                        </div>
 
                         <p className="desc_text mb-4 fw-light">
                             I am a 19-year old web developer with 2+ years experience in frontend
