@@ -6,9 +6,9 @@ const Footer = () => {
         <footer>
             <Container>
                 <div id="contact" className="text-center">
-                    <a href="#top" className="backToTop">
+                    <div className="backToTop" onClick={() => window.scrollTo(0, 0)}>
                         <BsArrowUp />
-                    </a>
+                    </div>
                     <h3 className="display-4 mb-5">Get In Touch</h3>
 
                     <div className="contact_info mb-5">
