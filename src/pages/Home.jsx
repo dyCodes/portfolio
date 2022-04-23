@@ -3,9 +3,9 @@ import Footer from '../layouts/Footer'
 import HeroSection from '../components/HeroSection'
 import PortfolioSection from '../components/PortfolioSection'
 
-const HomePage = () => {
+const Home = () => {
     return (
-        <div id='top' className="home">
+        <div className="home">
             <Header />
             <main>
                 <HeroSection />
@@ -16,4 +16,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
+export default Home
