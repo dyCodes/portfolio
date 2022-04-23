@@ -95,7 +95,7 @@ section {
       padding: 12px;
       display: grid;
       place-content: center;
-      background: #6c757d;
+      background: rgba(109, 118, 126, 0.8);
       overflow: hidden;
       position: relative;
 
@@ -126,25 +126,29 @@ section {
         opacity: 1;
       }
     }
+  }
+}
 
-    .project_link {
-      padding: 0 6px;
-      margin-top: 0 !important;
-      // text-decoration: underline;
-      .bi {
-        padding-left: 2px;
-      }
+.modal {
+  ._links {
+    padding: 0 6px;
+    margin-top: 0 !important;
+    a {
+      margin: 6px;
+      margin-left: 15px;
     }
-    .tech_used {
-      display: block;
-      // display: none;
-      font-size: 15px;
-      color: rgba(34, 34, 34, 0.95);
-      margin-top: 12px;
+    .bi {
+      padding-left: 2px;
+    }
+  }
+  .tech_stack {
+    display: block;
+    font-size: 15px;
+    color: rgba(34, 34, 34, 0.95);
+    margin-top: 12px;
 
-      b {
-        font-weight: 500;
-      }
+    b {
+      font-weight: 500;
     }
   }
 }
