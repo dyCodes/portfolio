@@ -2,11 +2,72 @@
 @import "./base";
 @import "./layout";
 
-.hero {
-  padding: 50px 5px;
+// COMPONENTS
+.section_heading {
+  text-align: center;
+  margin-bottom: 35px;
+
+  .title_ {
+    color: $mainColor;
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 60px;
+      height: 2px;
+      position: absolute;
+      background: $mainColor;
+      bottom: -14px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  .heading_sub {
+    line-height: 32px;
+    margin-top: -10px;
+    font-weight: 500;
+    padding: 10px;
+    text-transform: capitalize;
+  }
+}
+
+.modal {
+  ._links {
+    padding: 0 6px;
+    margin-top: 0 !important;
+    a {
+      margin: 6px;
+      margin-left: 15px;
+    }
+    .bi {
+      padding-left: 2px;
+    }
+  }
+  .tech_stack {
+    display: block;
+    font-size: 15px;
+    color: rgba(34, 34, 34, 0.95);
+    margin-top: 12px;
+
+    b {
+      font-weight: 500;
+    }
+  }
+}
+
+// SECTIONS
+section {
+  overflow: hidden;
+}
+
+._hero {
+  padding: 80px 6px 40px;
   min-height: 58vh;
   background: rgb(14, 16, 20);
-  overflow: hidden;
   @include flex_center;
 
   .container {
@@ -45,40 +106,26 @@
   }
 }
 
-.section_heading {
-  text-align: center;
-  margin-bottom: 35px;
+._about {
+  padding: 80px 6px;
 
-  .title_ {
-    color: $mainColor;
-    font-size: 16px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    position: relative;
-
-    &:before {
-      content: "";
-      width: 60px;
-      height: 2px;
-      position: absolute;
-      background: $mainColor;
-      bottom: -14px;
-      left: 0;
-      right: 0;
-      margin: auto;
-    }
+  .row {
+    flex-direction: column;
   }
-  .heading_sub {
-    line-height: 32px;
-    margin-top: -10px;
-    font-weight: 500;
-    padding: 10px;
+
+  .section_heading {
     text-transform: capitalize;
+    text-align: left;
+  }
+
+  p.about_me {
+    font-size: 1.12rem;
   }
 }
 
 ._portfolio {
   padding: 85px 6px 100px;
+  background: #eee;
 
   .card {
     text-align: center;
@@ -126,31 +173,7 @@
   }
 }
 
-.modal {
-  ._links {
-    padding: 0 6px;
-    margin-top: 0 !important;
-    a {
-      margin: 6px;
-      margin-left: 15px;
-    }
-    .bi {
-      padding-left: 2px;
-    }
-  }
-  .tech_stack {
-    display: block;
-    font-size: 15px;
-    color: rgba(34, 34, 34, 0.95);
-    margin-top: 12px;
-
-    b {
-      font-weight: 500;
-    }
-  }
-}
-
-.page_cover {
+/* .page_cover {
   padding-top: 85px;
   background: rgb(14, 16, 20);
   text-align: center;
@@ -162,37 +185,9 @@
     margin: 12px;
   }
 }
+*/
 
-// About Page
-section {
-  padding: 58px 6px;
-}
-
-.about {
-  header {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .about_section {
-    .row {
-      flex-direction: column-reverse;
-    }
-    .section_heading {
-      text-align: left;
-    }
-
-    p.about_me {
-      font-size: 1.12rem;
-    }
-  }
-}
-
-.skills_section {
-  // background: #f5f5f5;
-  margin: 6px;
-}
-
-// Responsive
+// RESPONSIVE STYLES
 @include mobile {
   #portfolio .card-body {
     padding-left: 8px;
