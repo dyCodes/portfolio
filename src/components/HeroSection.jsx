@@ -1,9 +1,10 @@
 import { Container } from 'react-bootstrap'
+import { Link } from 'react-scroll'
 import HeroImage from '../assets/img/hero-image.svg'
 
 const HeroSection = () => {
     return (
-        <div id="hero" className="hero">
+        <section id="hero" className="_hero">
             <Container>
                 <div className="row flex-lg-row-reverse _flex_center justify-content-lg-between g-5">
                     <div className="col-10 col-md-6 col-lg-5 hero_image p-lg-4">
@@ -24,13 +25,17 @@ const HeroSection = () => {
                             code.
                         </p>
                         <div className="_flex cta">
-                            <a href="assets/Resume-Yusuf-Daudu.pdf" download className="btn btn-light me-4">Download CV</a>
-                            <a href="#contact" className="btn btn-outline-light d-none d-md-block">Contact Me</a>
+                            <a href="assets/Resume-Yusuf-Daudu.pdf" download
+                                className="btn btn-light me-4">Download CV
+                            </a>
+                            <Link to="contact" duration={400} smooth={true}
+                                className="btn btn-outline-light d-none d-md-block">Contact Me
+                            </Link>
                         </div>
                     </div>
                 </div>
             </Container>
-        </div>
+        </section>
     )
 }
 

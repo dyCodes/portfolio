@@ -1,8 +1,9 @@
 // HEADER
 header {
   width: 100%;
-  position: absolute;
   padding: 12px 6px;
+  position: absolute;
+  top: 0;
 
   .navbar {
     transition: 0.2s;
@@ -24,6 +25,7 @@ header {
       font-size: 17px;
       font-weight: 400;
       letter-spacing: 0.2px;
+      cursor: pointer;
 
       &:hover {
         color: $mainColor;
