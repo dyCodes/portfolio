@@ -66,7 +66,7 @@ section {
 
 ._hero {
   padding: 80px 6px 40px;
-  min-height: 58vh;
+  min-height: 100vh;
   background: rgb(14, 16, 20);
   @include flex_center;
 
@@ -101,7 +101,7 @@ section {
     img {
       display: block;
       margin: auto;
-      // max-width: 480px;
+      // min-height: 260px;
     }
   }
 }
@@ -195,10 +195,17 @@ section {
   }
 }
 
+@include tablet {
+  #hero {
+    min-height: 70vh;
+  }
+}
+
 @include pc {
   #hero {
     height: 100vh;
     max-height: 840px;
+    min-height: unset;
   }
 }
 

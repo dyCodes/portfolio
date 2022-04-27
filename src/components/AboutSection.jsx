@@ -5,8 +5,8 @@ const AboutSection = () => {
     return (
         <section id="about" className="_about">
             <Container>
-                <div className="row flex-lg-row _flex_center justify-content-lg-between g-5">
-                    <div className="col-lg-7">
+                <div className="row flex-lg-row _flex_center justify-content-lg-between g-5" >
+                    <div data-aos="fade-up" className="col-lg-7">
                         <div className="section_heading mb-3">
                             <h2 className="_heading h1">Here's my story</h2>
                         </div>
@@ -20,8 +20,7 @@ const AboutSection = () => {
                             I also love doing open source development, I actively maintain various notable open source projects with over,
                         </p>
                     </div>
-
-                    <div className="col-lg-5 hero_image px-md-4">
+                    <div data-aos="fade-up" className="col-lg-5 hero_image px-md-4">
                         <img src={AboutImage} className="img-fluid" alt='Hero' />
                     </div>
                 </div>

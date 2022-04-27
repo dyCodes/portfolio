@@ -68,12 +68,13 @@ const PortfolioSection = () => {
     return (
         <section id="portfolio" className="_portfolio">
             <SectionHeading title={"portfolio"} sub={"Some of my previous works"} />
+
             <Container>
                 <div className="row g-4">
                     {portfolioList.map((item) => {
                         return (
                             <div key={item.id} className="col-12 col-md-6 col-lg-4">
-                                <div className="card" onClick={() => handleShowModal(item.id)}>
+                                <div className="card" data-aos="fade-up" onClick={() => handleShowModal(item.id)}>
                                     <div className="_image">
                                         <img src={item.image} alt={item.title} />
                                         <div className="_overlay">

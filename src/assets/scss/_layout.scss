@@ -4,6 +4,7 @@ header {
   padding: 12px 6px;
   position: absolute;
   top: 0;
+  z-index: 100;
 
   .navbar {
     transition: 0.2s;
