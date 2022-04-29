@@ -8,7 +8,7 @@ const Header = () => {
             <Navbar variant="dark" collapseOnSelect expand="md">
                 <Container>
                     <Navbar.Brand href="/">
-                        <img src="logo.png" alt="DY Logo" />
+                        <img src="assets/logo.png" alt="Logo" />
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="navbar" children={<BsList />} />
