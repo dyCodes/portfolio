@@ -33,7 +33,7 @@ const HeroText = () => {
             </div>
 
             <p className="desc_text mb-4 fw-light">
-                I'm a passionate individual with 2+ years experience developing high quality web applications using SCSS, BOOTSTRAP, jQuery, JavaScript, PHP & WordPress. I am highly motivated and always striving to improve.
+                I'm a passionate web developer with 2+ years experience developing high quality web applications using SCSS, Bootstrap, jQuery, JavaScript, PHP & WordPress. I am highly motivated and always striving to improve.
             </p>
 
             <div className="_flex cta">
