@@ -1,7 +1,7 @@
 import { Container } from 'react-bootstrap'
 import AboutImage from '../assets/img/about.svg'
 
-const AboutSection = () => {
+const About = () => {
     return (
         <section id="about" className="_about">
             <Container>
@@ -20,8 +20,8 @@ const AboutSection = () => {
                             I also love doing open source development, I actively maintain various notable open source projects with over,
                         </p>
                     </div>
-                    <div data-aos="fade-up" className="col-lg-5 hero_image px-md-4">
-                        <img src={AboutImage} className="img-fluid" alt='Hero' />
+                    <div data-aos="fade-up" className="col-md-8 col-lg-5 hero_image px-md-4">
+                        <img src={AboutImage} className="img-fluid" alt='About' />
                     </div>
                 </div>
             </Container>
@@ -29,4 +29,4 @@ const AboutSection = () => {
     )
 }
 
-export default AboutSection
+export default About

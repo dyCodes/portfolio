@@ -2,8 +2,8 @@ import { Modal } from 'react-bootstrap'
 import { BsArrowRight } from "react-icons/bs";
 
 
-const ProjectModal = ({ modal, handleCloseModal, portfolioList }) => {
-    let project = portfolioList[modal.id];
+const ProjectModal = ({ modal, handleCloseModal, portfolioData }) => {
+    let project = portfolioData[modal.id];
 
     return (
         <Modal show={modal.show} onHide={handleCloseModal} centered >
@@ -27,22 +27,28 @@ const ProjectLinks = ({ project }) => {
     return (
         <div className="_flex _links">
             {
-                project.url && <a href={project.url} target="_blank"
-                    rel="noreferrer">Visit Website <BsArrowRight /></a>
-            }
-            {
-                project.demo && <a href={project.demo} target="_blank"
-                    rel="noreferrer">Demo <BsArrowRight /></a>
-            }
-            {
-                project.github && <a href={project.github} target="_blank"
-                    rel="noreferrer">GitHub <BsArrowRight /></a>
-            }
-            {
-                project.figma && <a href={project.figma} target="_blank"
-                    rel="noreferrer">Figma <BsArrowRight /></a>
+                project.links.map(item => <Button key={item.text} link={item.url} text={item.text} />)
             }
         </div>
+    )
+}
+
+const Button = ({ link, text }) => {
+    let btnClass = 'btn-success';
+
+    // Set Button Background color
+    switch (text) {
+        case 'Demo':
+            btnClass = 'btn-primary';
+            break;
+        case 'GitHub':
+            btnClass = 'btn-secondary';
+            break;
+        // no default
+    }
+
+    return (
+        <a href={link} className={'btn ' + btnClass} target="_blank" rel="noreferrer">{text} <BsArrowRight /></a>
     )
 }
 
