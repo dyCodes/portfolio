@@ -8,16 +8,14 @@ const About = () => {
                 <div className="row flex-lg-row _flex_center justify-content-lg-between g-5" >
                     <div data-aos="fade-up" className="col-lg-7">
                         <div className="section_heading mb-3">
-                            <h2 className="_heading h1">Here's my story</h2>
+                            <h2 className="_heading h1">About Me</h2>
                         </div>
                         <p className="about_me">
-                            Hi, I'm Yusuf Daudu, a passionate FrontEnd developer from Lagos, Nigeria. I've been building stuff on the web since 2019, I've made countless side projects and I also posses magical powers of using react to build delightful user interfaces.
-                            <br />
-                            <br />
-                            I develop websites with HTML, CSS and JavaScript. I have top skills in using design softwares like Figma, Adobe XD, Invision and PhotoShop; with prototype tools like Framer and Protopie.
-                            <br />
-                            Being a diligent, hardworking and result oriented lady, I always work towards achieving best result on each project I lay my hands on.
-                            I also love doing open source development, I actively maintain various notable open source projects with over,
+                            I'm a 19-year old developer from Lagos, Nigeria. I am currently pursuing a degree in Computer Science at Lagos State University. I have a strong passion for programming and writing clean, well organized code.
+                            <br /> <br />
+                            I enjoy both the creative process of transforming UI designs into accessible web apps and the logical thinking behind creating the functionality of a web application.
+
+                            <b> Skilled</b> in SCSS, JavaScript, ReactJS, jQuery, MySQL, PHP and WordPress Development.
                         </p>
                     </div>
                     <div data-aos="fade-up" className="col-md-8 col-lg-5 hero_image px-md-4">
