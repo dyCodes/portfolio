@@ -1,14 +1,15 @@
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Link } from 'react-scroll'
 import { BsList } from "react-icons/bs";
+import Logo from '../assets/img/logo.png'
 
 const Header = () => {
     return (
         <header id="header">
             <Navbar variant="dark" collapseOnSelect expand="md">
                 <Container>
-                    <Navbar.Brand href="/">
-                        <img src="assets/logo.png" alt="Logo" />
+                    <Navbar.Brand href={process.env.PUBLIC_URL}>
+                        <img src={Logo} alt="Logo" />
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="navbar" children={<BsList />} />
