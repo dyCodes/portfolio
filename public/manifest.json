@@ -3,12 +3,12 @@
   "name": "Yusuf Daudu - Full Stack Developer",
   "icons": [
     {
-      "src": "assets/favicon.png",
-      "type": "image/png",
+      "src": "favicon.ico",
+      "type": "image/x-icon",
       "sizes": "32x32"
     },
     {
-      "src": "assets/logo.png",
+      "src": "icon192.png",
       "type": "image/png",
       "sizes": "192x192"
     }
