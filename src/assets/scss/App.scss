@@ -3,6 +3,10 @@
 @import "./layout";
 
 // COMPONENTS
+section {
+  overflow: hidden;
+}
+
 .section_heading {
   text-align: center;
   margin-bottom: 35px;
@@ -37,14 +41,18 @@
 
 .modal {
   ._links {
-    padding: 0 6px;
     margin-top: 0 !important;
-    a {
-      margin: 6px;
-      margin-left: 15px;
-    }
-    .bi {
-      padding-left: 2px;
+
+    .btn {
+      margin: 5px;
+      margin-left: 10px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+      .bi {
+        padding-left: 6px;
+      }
     }
   }
   .tech_stack {
@@ -60,10 +68,6 @@
 }
 
 // SECTIONS
-section {
-  overflow: hidden;
-}
-
 ._hero {
   padding: 80px 6px 40px;
   min-height: 100vh;
@@ -173,19 +177,29 @@ section {
   }
 }
 
-/* .page_cover {
-  padding-top: 85px;
-  background: rgb(14, 16, 20);
+._contact {
   text-align: center;
-  @include flex_center;
 
-  .cover_title {
+  .backToTop {
+    display: inline-block;
     color: #fff;
-    padding: 3.85rem 0;
-    margin: 12px;
+    font-size: 38px;
+    padding: 12px;
+    position: relative;
+    top: -24px;
+    cursor: pointer;
+  }
+
+  .contact_info {
+    p,
+    a {
+      color: rgba(255, 255, 255, 0.75);
+    }
+    a {
+      text-decoration: underline;
+    }
   }
 }
-*/
 
 // RESPONSIVE STYLES
 @include mobile {

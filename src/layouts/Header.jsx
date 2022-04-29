@@ -5,7 +5,7 @@ import { BsList } from "react-icons/bs";
 const Header = () => {
     return (
         <header id="header">
-            <Navbar variant="dark" expand="md">
+            <Navbar variant="dark" collapseOnSelect expand="md">
                 <Container>
                     <Navbar.Brand href="/">
                         <img src="logo.png" alt="DY Logo" />
@@ -14,37 +14,41 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="navbar" children={<BsList />} />
 
                     <Navbar.Collapse id="navbar">
-                        <Nav className="ms-auto">
-                            <Link className='nav-link'
+                        <Nav className="ms-auto" activeKey="">
+                            <Nav.Link as={Link} eventKey={1}
                                 activeClass="active"
                                 duration={200}
                                 spy={true}
                                 smooth='easeInQuint'
-                                to="hero">Home</Link>
+                                to="hero">Home
+                            </Nav.Link>
 
-                            <Link className="nav-link"
+                            <Nav.Link as={Link} eventKey={2}
                                 activeClass="active"
                                 hashSpy={true}
                                 duration={200}
                                 spy={true}
                                 smooth='easeInQuint'
-                                to="about">About</Link>
+                                to="about">About
+                            </Nav.Link>
 
-                            <Link className="nav-link"
+                            <Nav.Link as={Link} eventKey={3}
                                 activeClass="active"
                                 hashSpy={true}
                                 duration={400}
                                 spy={true}
                                 smooth='easeInQuint'
-                                to="portfolio">Portfolio</Link>
+                                to="portfolio">Portfolio
+                            </Nav.Link>
 
-                            <Link className="nav-link"
+                            <Nav.Link as={Link} eventKey={4}
                                 activeClass="active"
                                 hashSpy={true}
                                 duration={500}
                                 spy={true}
                                 smooth='easeInQuint'
-                                to="contact">Contact</Link>
+                                to="contact">Contact
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -44,25 +44,6 @@ footer {
   color: #fff;
   padding: 48px 12px;
   background: rgb(12, 13, 15);
-
-  .backToTop {
-    display: inline-block;
-    color: #fff;
-    font-size: 38px;
-    padding: 12px;
-    position: relative;
-    top: -24px;
-    cursor: pointer;
-  }
-  .contact_info {
-    p,
-    a {
-      color: rgba(255, 255, 255, 0.75);
-    }
-    a {
-      text-decoration: underline;
-    }
-  }
 }
 
 /* RESPONSIZE CSS */
