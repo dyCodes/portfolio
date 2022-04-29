@@ -4,7 +4,7 @@ const ProjectCard = ({ project, handleShowModal }) => {
     return (
         <div className="card" data-aos="fade-up" onClick={() => handleShowModal(project.id)}>
             <div className="_image">
-                <img src={project.image} alt={project.title} />
+                <img src={process.env.PUBLIC_URL + project.image} alt={project.title} />
                 <div className="_overlay">
                     <BsInfoCircle className="btn" />
                 </div>
