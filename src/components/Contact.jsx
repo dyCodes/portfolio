@@ -14,7 +14,7 @@ const Contact = () => {
                     <p className="h5 fw-light mb-4">
                         <a href="mailto:yusufdaudu75@gmail.com">yusufdaudu75@gmail.com</a>
                     </p>
-                    <p className="h5 fw-light">+2349038254560</p>
+                    <p className="h5 fw-light">+2348129707106</p>
                 </div>
 
                 <div className="social_media p-0">

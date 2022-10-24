@@ -1,0 +1,10 @@
+{
+  "liveSassCompile.settings.includeItems": ["src/assets/scss/*"],
+  "liveSassCompile.settings.formats": [
+    {
+      "extensionName": ".css",
+      "format": "compressed",
+      "savePath": "/src/"
+    }
+  ]
+}

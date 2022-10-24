@@ -29,11 +29,11 @@ const HeroText = () => {
                 <h1 className="_heading mb-2">
                     Hi, I'm Yusuf Daudu
                 </h1>
-                <h3 className="_sub_heading fw-normal">Full-Stack Developer</h3>
+                <h3 className="_sub_heading fw-normal">Full-Stack Web Developer</h3>
             </div>
 
             <p className="desc_text mb-4 fw-light">
-                I'm a passionate web developer with 2+ years experience developing high quality web applications using SCSS, Bootstrap, jQuery, JavaScript, PHP & WordPress. I am highly motivated and always striving to improve.
+                I'm a goal-oriented web developer with adequate experience and knowledge in developing responsive, well-designed and Functional web applications.
             </p>
 
             <div className="_flex cta">
