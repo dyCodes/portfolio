@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
-  "homepage": "https://dycodes.github.io/portfolio/",
+  "name": "yusuf-daudu-portfolio",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
