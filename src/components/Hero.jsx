@@ -33,7 +33,7 @@ const HeroText = () => {
             </div>
 
             <p className="desc_text mb-4 fw-light">
-                I'm a goal-oriented web developer with adequate experience and knowledge in developing responsive, well-designed and Functional web applications.
+                I'm a goal-oriented web developer with adequate experience and knowledge in developing responsive, well-designed and functional web applications.
             </p>
 
             <div className="_flex cta">

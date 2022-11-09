@@ -10,14 +10,15 @@ const About = () => {
                         <div className="section_heading mb-3">
                             <h2 className="_heading h1">About Me</h2>
                         </div>
-                        <p className="about_me pe-lg-4">
+                        <p className="about_me pe-lg-2">
                             <p>
-                                I'm a full-stack web developer with a passion for programming and solving technical problems. I am currently pursuing a degree in Computer Science at Lagos State University.
+                                I'm a Full-stack web developer with a strong passion for programming and solving technical problems. I am currently pursuing a degree in <b>Computer Science</b> at Lagos State University.
                             </p>
 
                             <p className='mt-3'>
-                                {/* I have a good understanding of the fundamentals of web development and I am always eager to learn new technologies and improve my skills. */}
-                                I enjoy both the creative process of transforming UI designs into accessible web apps and the logical thinking behind creating the functionality of a web application.
+                                I started my journey as a web developer in <b>2019</b> and since then I have been able to work with different technologies and frameworks. I have a good understanding of the fundamentals of web development and I am always eager to learn new technologies and improve my skills.
+                                <br />
+                                {/* I enjoy both frontend and backend development and I am always looking for opportunities to work on challenging projects. */}
                             </p>
 
                             <p className='mt-3'>

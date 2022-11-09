@@ -3,7 +3,7 @@ const portfolioData = [
         id: 0,
         title: "Meyyotivity",
         image: "/assets/works/meyyotivity.jpg",
-        desc: "Meyyotivity is a unisex clothing brand. I developed the website from scratch, created a custom WordPress Theme, setup wooCommerce and Paystack payment gateway, etc.",
+        desc: "Meyyotivity is a unisex clothing brand. I designed and implemented the website from concept through deployment, created a custom WordPress Theme, setup WooCommerce, Paystack payment gateway, etc.",
         techStack: "SCSS, Bootstrap, jQuery, PHP, WordPress, WooCommerce",
         links: [
             { text: 'View Site', url: "https://www.meyyotivity.com/", },
@@ -11,20 +11,9 @@ const portfolioData = [
     },
     {
         id: 1,
-        title: "Photo Gallery",
-        image: "/assets/works/photo-gallery-reactjs.jpg",
-        desc: "A photo gallery web app created with ReactJs and unsplash images API.",
-        techStack: "ReactJs, JavaScript, MaterialUI",
-        links: [
-            { text: 'Demo', url: "https://dycodes.github.io/photo-gallery-reactjs/", },
-            { text: 'GitHub', url: "https://github.com/dyCodes/photo-gallery-reactjs", },
-        ]
-    },
-    {
-        id: 2,
         title: "FlexEvent",
         image: "/assets/works/flexevent.jpg",
-        desc: "FlexEvent is a portfolio website for wedding planners/event management companies.It features an admin dashboard to manage the gallery, testimonials, services and other contents displayed on the website. ",
+        desc: "FlexEvent is a portfolio website for wedding planners or event management companies. It features an admin dashboard to manage the gallery images, testimonials, services and other contents displayed on the website.",
         techStack: "SCSS, Bootstrap, JavaScript, PHP, Laravel",
         links: [
             { text: 'Demo', url: "http://flexevent.yusufdaudu.tech", },
@@ -32,13 +21,24 @@ const portfolioData = [
         ]
     },
     {
-        id: 3,
+        id: 2,
         title: "Florintech Computer College",
         image: "/assets/works/florintechcomputercollege.jpg",
-        desc: "Florintech is an I.T institution which delivers quality computer training to students. I developed a school management system with features like register student, view and edit student info, generate ID card, etc.",
+        desc: "Florintech is an I.T training institution. I developed a school management system and implement features like register, view and edit students, generate ID cards, manage payment, etc.",
         techStack: "HTML, CSS, Bootstrap, jQuery, MySQL, PHP",
         links: [
             { text: 'Visit Website', url: "http://admin.florintechcomputercollege.com", },
+        ]
+    },
+    {
+        id: 3,
+        title: "Photo Gallery",
+        image: "/assets/works/photo-gallery-reactjs.jpg",
+        desc: "A photo gallery web app created with ReactJs and unsplash images API.",
+        techStack: "ReactJs, JavaScript, MaterialUI",
+        links: [
+            { text: 'Demo', url: "https://dycodes.github.io/photo-gallery-reactjs/", },
+            { text: 'GitHub', url: "https://github.com/dyCodes/photo-gallery-reactjs", },
         ]
     },
     {
@@ -56,7 +56,7 @@ const portfolioData = [
         id: 5,
         title: "My Portfolio",
         image: "/assets/works/portfolio.jpg",
-        desc: "My personal portfolio website created with ReactJs.",
+        desc: "A modern personal portfolio website created with ReactJS.",
         techStack: "ReactJS, SCSS, Bootstrap, React Scroll, AOS Library",
         links: [
             { text: 'View Site', url: "https://yusufdaudu.tech/", },
